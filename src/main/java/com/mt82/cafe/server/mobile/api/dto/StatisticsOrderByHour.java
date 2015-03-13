@@ -10,17 +10,18 @@
 package com.mt82.cafe.server.mobile.api.dto;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class StatisticsOrderByHour implements Serializable {
 
     private Long orderedQty;
-    private Integer hourOfDay;
+    private Date hourOfDay;
 
-    public Integer getHourOfDay() {
+    public Date getHourOfDay() {
         return hourOfDay;
     }
 
-    public void setHourOfDay(Integer hourOfDay) {
+    public void setHourOfDay(Date hourOfDay) {
         this.hourOfDay = hourOfDay;
     }
 
